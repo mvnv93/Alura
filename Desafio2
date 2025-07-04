@@ -1,0 +1,52 @@
+// Criar uma função que exibe "Olá, mundo!" no console.
+function exibirMensagemNoConsole(){
+    console.log('Olá mundo!');
+}
+
+exibirMensagemNoConsole();
+
+// Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+
+function exibirSaudacaoNome(nome1){
+    console.log(`Olá, ${nome1}!!`);
+}
+
+exibirSaudacaoNome('Marcus');
+
+// Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+function dobraNumero(numero){
+    return parseInt(numero * 2);
+}
+
+let numeroDobrado = dobraNumero(5);
+console.log(numeroDobrado);
+
+// Criar uma função que recebe três números como parâmetros e retorna a média deles.
+function mediaTresNumeros(num1, num2, num3){
+    return parseInt( (num1 + num2 + num3) / 3 );
+}
+let numero1 = 2;
+let numero2 = 4;
+let numero3 = 6;
+let resultado = mediaTresNumeros(numero1,numero2,numero3);
+console.log(resultado);
+
+// Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+function retornaMAior(a,b){
+    // if(a>b){
+    //     return a;
+    // } else {
+    //     return b;
+    // }
+    return a > b ? a : b;
+}
+
+let retornoMaior = retornaMAior(7,13);
+console.log(retornoMaior);
+
+// Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+function multiplicaNumero(a){
+    return a * a;
+}
+let result = multiplicaNumero(5);
+console.log(result);
